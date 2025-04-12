@@ -610,6 +610,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .class-card {
@@ -617,17 +618,50 @@ ul {
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.class-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
 }
 
 .class-image {
-    height: 200px;
+    height: 200px; /* Altura fija para todas las imágenes */
     background-size: cover;
     background-position: center;
+    width: 100%;
+}
+
+.class-content {
+    padding: 25px;
+    flex-grow: 1; /* Para que el contenido se expanda y las cards tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.class-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.class-content p {
+    margin-bottom: 15px;
+    flex-grow: 1; /* Para que los párrafos se expandan y los botones queden alineados */
+}
+
+/* Ajuste responsive para pantallas medianas */
+@media (max-width: 992px) {
+    .classes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Ajuste responsive para móviles */
+@media (max-width: 576px) {
+    .classes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .class-image {
+        height: 180px; /* Altura ligeramente menor para móviles */
+    }
 }
 
 .beginner-class {

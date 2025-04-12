@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', function() {
                           tarjeta.querySelector('.tarjeta-info').offsetHeight;
 
             // Convertir altura a filas de la cuadrícula (cada fila es de 10px)
-            const rowSpan = Math.ceil(altura / 10);
+            const rowSpan = Math.ceil(altura / 40);
             tarjeta.style.gridRowEnd = `span ${rowSpan}`;
         });
     }
