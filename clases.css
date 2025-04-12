@@ -1,0 +1,627 @@
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #0a0f2d;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #64ffda;
+}
+
+/* Filtros laterales */
+.filtros-laterales {
+    position: fixed;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
+}
+
+.filtros-laterales input[type="radio"] {
+    display: none;
+}
+
+.filtros-laterales .filtro-btn {
+    padding: 12px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.filtros-laterales .filtro-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filtros-laterales input[type="radio"]:checked + .filtro-btn {
+    background-color: #fff;
+    color: #0a0f2d;
+}
+
+/* Secciones de sesión */
+.session-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.media-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Video container */
+.video-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.video-placeholder {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Gallery grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    text-align: right;
+    font-weight: 600;
+}
+
+/* Clases Section */
+.clases h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Sistema de filtrado con CSS :checked */
+.filtros {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filtros input[type="radio"] {
+    display: none;
+}
+
+.filtros .filtro-btn {
+    padding: 10px 20px;
+    margin: 0 10px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtros .filtro-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filtros input[type="radio"]:checked + .filtro-btn {
+    background-color: #fff;
+    color: #0a0f2d;
+}
+
+/* Galería tipo masonry con CSS Grid */
+/* Mejora de la galería masonry con tarjetas de diferentes tamaños */
+.galeria-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Tarjetas de diferentes tamaños */
+.tarjeta-clase {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #131c4d;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+}
+
+.tarjeta-clase:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajuste de tamaños con nth-child para variar los tamaños */
+.tarjeta-clase:nth-child(3n+1) {
+    grid-row-end: span 2;
+}
+
+.tarjeta-clase:nth-child(5n+2) {
+    grid-column-end: span 2;
+}
+
+/* Asegurar que las imágenes se muestren correctamente */
+.tarjeta-imagen {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 70%; /* Proporción de aspecto consistente */
+}
+
+.tarjeta-imagen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto mantiene la proporción de la imagen */
+    transition: transform 0.5s ease;
+}
+
+/* Mejorar el aspecto del overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 15, 45, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Mejorar la visualización en dispositivos móviles */
+@media (max-width: 768px) {
+    .galeria-masonry {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .tarjeta-clase:nth-child(5n+2) {
+        grid-column-end: span 1; /* Evitar que ocupen 2 columnas en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria-masonry {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Filtrado por categoría usando :checked y combinadores */
+#todos:checked ~ .galeria-masonry .tarjeta-clase {
+    display: block;
+}
+
+#musculacion:checked ~ .galeria-masonry .tarjeta-clase:not(.musculacion) {
+    display: none;
+}
+
+#crossfit:checked ~ .galeria-masonry .tarjeta-clase:not(.crossfit) {
+    display: none;
+}
+
+#yoga:checked ~ .galeria-masonry .tarjeta-clase:not(.yoga) {
+    display: none;
+}
+
+#spinning:checked ~ .galeria-masonry .tarjeta-clase:not(.spinning) {
+    display: none;
+}
+
+/* Tarjetas con efectos de zoom y overlay */
+.tarjeta-imagen {
+    position: relative;
+    overflow: hidden;
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.tarjeta-clase:hover .tarjeta-imagen img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 15, 45, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.tarjeta-clase:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    margin-bottom: 20px;
+}
+
+.tarjeta-info {
+    padding: 20px;
+}
+
+.tarjeta-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.tarjeta-info p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* Horarios Section */
+.horarios h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Tabla responsiva de horarios */
+.tabla-container {
+    overflow-x: auto;
+}
+
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #131c4d;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tabla-horarios th,
+.tabla-horarios td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tabla-horarios th {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+}
+
+.tabla-horarios tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.tabla-horarios td.musculacion {
+    background-color: rgba(255, 99, 71, 0.2);
+}
+
+.tabla-horarios td.crossfit {
+    background-color: rgba(65, 105, 225, 0.2);
+}
+
+.tabla-horarios td.yoga {
+    background-color: rgba(50, 205, 50, 0.2);
+}
+
+.tabla-horarios td.spinning {
+    background-color: rgba(255, 215, 0, 0.2);
+}
+
+/* Contacto Section */
+.contacto {
+    text-align: center;
+}
+
+.contacto h2 {
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    margin-bottom: 40px;
+}
+
+.contacto-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contacto-item {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #131c4d;
+    border-radius: 15px;
+}
+
+.social-media {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon {
+    display: inline-block;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #64ffda;
+}
+
+/* Footer */
+footer {
+    background-color: #080c24;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+    .filtros-laterales {
+        left: 15px;
+    }
+
+    .filtros-laterales .filtro-btn {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .text-content, .media-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .filtros-laterales {
+        position: fixed;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        transform: none;
+        flex-direction: row;
+        width: 100%;
+        background-color: rgba(10, 15, 45, 0.9);
+        padding: 15px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .filtros-laterales .filtro-btn {
+        font-size: 0.7rem;
+        padding: 8px 12px;
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .galeria-masonry {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .contacto-info {
+        flex-direction: column;
+    }
+
+    /* Tabla responsiva para móviles */
+    .tabla-horarios {
+        display: block;
+    }
+
+    .tabla-horarios thead {
+        display: none;
+    }
+
+    .tabla-horarios tbody,
+    .tabla-horarios tr,
+    .tabla-horarios td {
+        display: block;
+        width: 100%;
+    }
+
+    .tabla-horarios tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .tabla-horarios td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .tabla-horarios td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        text-align: left;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 480px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .filtros .filtro-btn {
+        margin: 0 5px 10px;
+        padding: 8px 15px;
+    }
+}

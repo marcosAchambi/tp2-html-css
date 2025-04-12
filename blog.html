@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Fitness - BHOUT Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="media/logo.png" alt="BHOUT Club" class="logo-img">
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item dropdown">
+                            <a href="#clases" class="nav-link">Classes <span class="dropdown-arrow">▼</span></a>
+                            <div class="dropdown-content">
+                                <a href="#musculacion">Musculacion</a>
+                                <a href="#crossfit">CrossFit</a>
+                                <a href="#yoga">Yoga</a>
+                                <a href="#spinning">Spinning</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Experience <span class="dropdown-arrow">▼</span></a>
+                            <div class="dropdown-content">
+                                <a href="#horarios">Events</a>
+                                <a href="blog.html">Blog</a>
+                                <a href="#trainers">Trainers</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing.html" class="nav-link">Prices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="blog-container">
+            <div class="blog-header">
+                <h2>Artículos Recientes</h2>
+                <div class="blog-filters">
+                    <div class="filter-label">Filtrar por:</div>
+                    <div class="filter-tags">
+                        <button class="filter-tag active" data-filter="all">Todos</button>
+                        <button class="filter-tag" data-filter="entrenamiento">Entrenamiento</button>
+                        <button class="filter-tag" data-filter="nutricion">Nutrición</button>
+                        <button class="filter-tag" data-filter="motivacion">Motivación</button>
+                        <button class="filter-tag" data-filter="recuperacion">Recuperación</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Artículo destacado -->
+                <article class="blog-post featured" data-category="entrenamiento nutricion">
+                    <div class="post-image">
+                        <img src="media/class-2.jpg" height="300" width="800"  alt="Entrenamiento HIIT">
+                        <div class="post-categories">
+                            <span class="post-category entrenamiento">Entrenamiento</span>
+                            <span class="post-category nutricion">Nutrición</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Cómo combinar HIIT y nutrición para resultados óptimos</h3>
+                        <div class="post-meta">
+                            <span class="post-date">15 abril, 2025</span>
+                            <span class="post-author">Por Carlos Martínez</span>
+                        </div>
+                        <p>El entrenamiento de alta intensidad por intervalos (HIIT) se ha convertido en una de las formas más eficientes de ejercicio para quemar grasa y mejorar la condición física. Cuando se combina con una estrategia nutricional adecuada, los resultados pueden ser sorprendentes...</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Artículos regulares -->
+                <article class="blog-post" data-category="nutricion">
+                    <div class="post-image">
+                        <img src="media/class-2.jpg" height="300" width="500" alt="Proteínas vegetales">
+                        <div class="post-categories">
+                            <span class="post-category nutricion">Nutrición</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Las mejores fuentes de proteína vegetal para atletas</h3>
+                        <div class="post-meta">
+                            <span class="post-date">10 abril, 2025</span>
+                            <span class="post-author">Por Ana Gómez</span>
+                        </div>
+                        <p>Contrario a la creencia popular, los atletas pueden obtener suficiente proteína de fuentes vegetales. Descubre las mejores opciones para mantener y desarrollar masa muscular...</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-category="entrenamiento">
+                    <div class="post-image">
+                        <img src="media/class-2.jpg" height="300" width="500" alt="Entrenamiento de fuerza">
+                        <div class="post-categories">
+                            <span class="post-category entrenamiento">Entrenamiento</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h3>5 ejercicios compuestos para maximizar tu tiempo en el gimnasio</h3>
+                        <div class="post-meta">
+                            <span class="post-date">8 abril, 2025</span>
+                            <span class="post-author">Por Miguel Sánchez</span>
+                        </div>
+                        <p>Los ejercicios compuestos son la clave para un entrenamiento eficiente. Trabajan múltiples grupos musculares simultáneamente, queman más calorías y estimulan la liberación de hormonas anabólicas...</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-category="motivacion">
+                    <div class="post-image">
+                        <img src="media/class-2.jpg" height="300" width="500" alt="Motivación fitness">
+                        <div class="post-categories">
+                            <span class="post-category motivacion">Motivación</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Cómo mantener la motivación durante todo el año</h3>
+                        <div class="post-meta">
+                            <span class="post-date">5 abril, 2025</span>
+                            <span class="post-author">Por Laura Pérez</span>
+                        </div>
+                        <p>Mantener la motivación a largo plazo es uno de los mayores desafíos en el fitness. Aprende estrategias prácticas para establecer metas realistas y mantener el impulso incluso cuando no ves resultados inmediatos...</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-category="recuperacion">
+                    <div class="post-image">
+                        <img src="media/class-2.jpg" height="300" width="500" alt="Recuperación muscular">
+                        <div class="post-categories">
+                            <span class="post-category recuperacion">Recuperación</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h3>La importancia del sueño en la recuperación muscular</h3>
+                        <div class="post-meta">
+                            <span class="post-date">2 abril, 2025</span>
+                            <span class="post-author">Por David Torres</span>
+                        </div>
+                        <p>El sueño es cuando tu cuerpo realiza la mayor parte de su reparación y crecimiento muscular. Descubre cómo optimizar tu descanso para mejorar tus resultados en el gimnasio...</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-post" data-category="nutricion entrenamiento">
+                    <div class="post-image">
+                        <img src="media/class-2.jpg" height="300" width="500"  alt="Nutrición pre-entrenamiento">
+                        <div class="post-categories">
+                            <span class="post-category nutricion">Nutrición</span>
+                            <span class="post-category entrenamiento">Entrenamiento</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Qué comer antes y después de entrenar para maximizar resultados</h3>
+                        <div class="post-meta">
+                            <span class="post-date">28 marzo, 2025</span>
+                            <span class="post-author">Por Elena Ruiz</span>
+                        </div>
+                        <p>La nutrición alrededor del entrenamiento puede marcar una gran diferencia en tu rendimiento y recuperación. Aprende las mejores estrategias para alimentarte antes y después del ejercicio...</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Sección de comentarios -->
+            <div class="comments-section">
+                <h2>Comentarios recientes</h2>
+
+                <div class="comments-container">
+                    <div class="comment">
+                        <div class="comment-avatar" data-initials="JD"></div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <h4>Juan Díaz</h4>
+                                <span class="comment-date">Hace 2 días</span>
+                            </div>
+                            <p>¡Excelente artículo sobre HIIT! He estado siguiendo este tipo de entrenamiento durante un mes y los resultados son increíbles. La combinación con una buena nutrición realmente marca la diferencia.</p>
+                            <div class="comment-actions">
+                                <button class="comment-like"><i class="far fa-heart"></i> 15</button>
+                                <button class="comment-reply">Responder</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-avatar" data-initials="MR"></div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <h4>María Rodríguez</h4>
+                                <span class="comment-date">Hace 3 días</span>
+                            </div>
+                            <p>Me encantaría ver más contenido sobre opciones de proteínas vegetales. Estoy tratando de reducir mi consumo de carne pero me preocupa no obtener suficiente proteína para mis entrenamientos.</p>
+                            <div class="comment-actions">
+                                <button class="comment-like"><i class="far fa-heart"></i> 8</button>
+                                <button class="comment-reply">Responder</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-avatar" data-initials="PL"></div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <h4>Pablo López</h4>
+                                <span class="comment-date">Hace 5 días</span>
+                            </div>
+                            <p>La información sobre el sueño y la recuperación muscular me ha ayudado mucho. Desde que priorizo 8 horas de sueño, mi rendimiento en el gimnasio ha mejorado notablemente.</p>
+                            <div class="comment-actions">
+                                <button class="comment-like"><i class="far fa-heart"></i> 12</button>
+                                <button class="comment-reply">Responder</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment-form">
+                    <h3>Deja un comentario</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="comment-name">Nombre</label>
+                            <input type="text" id="comment-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-email">Email</label>
+                            <input type="email" id="comment-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-text">Comentario</label>
+                            <textarea id="comment-text" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-comment">Publicar comentario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-map">
+                <h4>Encuéntranos aquí</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.198388057299!2d-62.401998223454896!3d-33.62609770653043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c8eb7673b6c67f%3A0x56345efaab51c861!2sGymTop%20Equipamientos!5e0!3m2!1ses!2sar!4v1744412924445!5m2!1ses!2sar"
+                    width="100%"
+                    height="450"
+                    style="border:0; border-radius: 8px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="media/logo.png" alt="BHOUT Club" class="footer-logo-img">
+                    <p>Experience the power of boxing for body and mind.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Training</h4>
+                        <ul>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Personal Training</a></li>
+                            <li><a href="#">Schedules</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Join Our Newsletter</h4>
+                    <p>Stay updated with the latest news and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-solid">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 BHOUT Club. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>

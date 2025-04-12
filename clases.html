@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases - PowerFit Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="clases.css">
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Botón de cambio de tema (Modo Oscuro) -->
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </label>
+    </div>
+
+    <!-- Header con Mega-menú (Igual que en index.html) -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <svg viewBox="0 0 200 60" class="logo-svg">
+                    <path d="M20,10 L40,10 L45,20 L40,30 L20,30 L15,20 Z" class="logo-hex"></path>
+                    <text x="30" y="23" class="logo-text">PF</text>
+                </svg>
+                <h1>PowerFit</h1>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="has-mega-menu">
+                        <a href="clases.html" class="active">Clases <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <!-- Contenido del mega-menú igual que en index.html -->
+                            <div class="mega-menu-column">
+                                <h3>Cardio</h3>
+                                <ul>
+                                    <li><a href="clases.html#spinning">Spinning</a></li>
+                                    <li><a href="clases.html#zumba">Zumba</a></li>
+                                    <li><a href="clases.html#hiit">HIIT</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h3>Fuerza</h3>
+                                <ul>
+                                    <li><a href="clases.html#musculacion">Musculación</a></li>
+                                    <li><a href="clases.html#crossfit">CrossFit</a></li>
+                                    <li><a href="clases.html#funcional">Entrenamiento Funcional</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h3>Mente-Cuerpo</h3>
+                                <ul>
+                                    <li><a href="clases.html#yoga">Yoga</a></li>
+                                    <li><a href="clases.html#pilates">Pilates</a></li>
+                                    <li><a href="clases.html#estiramiento">Estiramientos</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-image">
+                                <img src="img/mega-menu-img.jpg" alt="Entrenamiento en PowerFit">
+                                <a href="clases.html" class="btn">Ver todas las clases</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="entrenadores.html">Entrenadores</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero para página de clases -->
+    <section class="classes-hero">
+        <div class="container">
+            <h1 class="animated-text">Nuestras Clases</h1>
+            <p class="animated-subtext">Descubre la variedad de actividades que tenemos para ti</p>
+        </div>
+    </section>
+
+    <!-- Sistema de filtrado -->
+    <section class="classes-filter">
+        <div class="container">
+            <h2>Filtra por categoría</h2>
+            <div class="filter-container">
+                <input type="radio" id="filter-all" name="filter" value="all" checked>
+                <label for="filter-all" class="filter-btn">Todas</label>
+
+                <input type="radio" id="filter-cardio" name="filter" value="cardio">
+                <label for="filter-cardio" class="filter-btn">Cardio</label>
+
+                <input type="radio" id="filter-strength" name="filter" value="strength">
+                <label for="filter-strength" class="filter-btn">Fuerza</label>
+
+                <input type="radio" id="filter-mind" name="filter" value="mind">
+                <label for="filter-mind" class="filter-btn">Mente-Cuerpo</label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería tipo Masonry con Grid -->
+    <section class="classes-gallery">
+        <div class="container">
+            <div class="masonry-grid">
+                <!-- Cardio Classes -->
+                <div class="class-item cardio" id="spinning">
+                    <div class="class-image">
+                        <img src="img/spinning.jpg" alt="Clase de Spinning">
+                        <div class="class-overlay">
+                            <h3>Spinning</h3>
+                            <p>Quema calorías con nuestras clases de ciclismo indoor con música motivadora y entrenadores energéticos.</p>
+                            <a href="#" class="btn btn-outline">Reservar</a>
+                        </div>
+                    </div>
+                    <div class="class-info">
+                        <h3>Spinning</h3>
+                        <div class="class-details">
+                            <span><i class="far fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-fire"></i> Alta intensidad</span>
+                            <span><i class="fas fa-dumbbell"></i> Cardio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="class-item cardio" id="zumba">
+                    <div class="class-image">
+                        <img src="img/zumba.jpg" alt="Clase de Zumba">
+                        <div class="class-overlay">
+                            <h3>Zumba</h3>
+                            <p>Ejercítate mientras bailas con esta divertida clase que combina ritmos latinos y ejercicios aeróbicos.</p>
+                            <a href="#" class="btn btn-outline">Reservar</a>
+                        </div>
+                    </div>
+                    <div class="class-info">
+                        <h3>Zumba</h3>
+                        <div class="class-details">
+                            <span><i class="far fa-clock"></i> 60 min</span>
+                            <span><i class="fas fa-fire"></i> Media intensidad</span>
+                            <span><i class="fas fa-dumbbell"></i> Cardio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="class-item cardio" id="hiit">
+                    <div class="class-image tall-image">
+                        <img src="img/hiit.jpg" alt="Clase de HIIT">
+                        <div class="class-overlay">
+                            <h3>HIIT</h3>
+                            <p>Entrenamiento por intervalos de alta intensidad que maximiza la quema de calorías en menos tiempo.</p>
+                            <a href="#" class="btn btn-outline">Reservar</a>
+                        </div>
+                    </div>
+                    <div class="class-info">
+                        <h3>HIIT</h3>
+                        <div class="class-details">
+                            <span><i class="far fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-fire"></i> Alta intensidad</span>
+                            <span><i class="fas fa-dumbbell"></i> Cardio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strength Classes -->
+                <div class="class-item strength" id="musculacion">
+                    <div class="class-image wide-image">
+                        <img src="img/musculacion.jpg" alt="Musculación">
+                        <div class="class-overlay">
+                            <h3>Musculación</h3>
+                            <p>Desarrolla tu fuerza y masa muscular con programas personalizados y equipamiento de última generación.</p>
+                            <a href="#" class="btn btn-outline">Reservar</a>
+                        </div>
+                    </div>
+                    <div class="class-info">
+                        <h3>Musculación</h3>
+                        <div class="class-details">
+                            <span><i class="far fa-clock"></i> 60-90 min</span>
+                            <span><i class="fas fa-fire"></i> Intensidad variable</span>
+                            <span><i class="fas fa-dumbbell"></i> Fuerza</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

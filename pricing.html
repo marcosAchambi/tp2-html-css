@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes y Precios - BHOUT Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pricing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="media/logo.png" alt="BHOUT Club" class="logo-img">
+                    </a>
+                </div>
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item dropdown">
+                            <a href="#clases" class="nav-link">Classes <span class="dropdown-arrow">▼</span></a>
+                            <div class="dropdown-content">
+                                <a href="#musculacion">Musculacion</a>
+                                <a href="#crossfit">CrossFit</a>
+                                <a href="#yoga">Yoga</a>
+                                <a href="#spinning">Spinning</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Experience <span class="dropdown-arrow">▼</span></a>
+                            <div class="dropdown-content">
+                                <a href="#horarios">Events</a>
+                                <a href="blog.html">Blog</a>
+                                <a href="#trainers">Trainers</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pricing.html" class="nav-link">Prices</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="pricing-container">
+            <div class="pricing-toggle">
+                <span class="toggle-label active">Mensual</span>
+                <label class="switch">
+                    <input type="checkbox" id="billingToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span class="toggle-label">Anual <span class="discount">-20%</span></span>
+            </div>
+
+            <div class="pricing-table">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Básico</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount monthly">29</span>
+                            <span class="amount annual">23</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <i class="fas fa-check"></i> Acceso a gimnasio
+                                <span class="tooltip" data-tooltip="Acceso ilimitado en horario de apertura">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                            </li>
+                            <li><i class="fas fa-check"></i> 2 clases grupales/semana</li>
+                            <li><i class="fas fa-check"></i> App de seguimiento básica</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Entrenador personal</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Nutrición personalizada</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Acceso a todas las sedes</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#" class="btn-pricing">Elegir plan</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Más popular</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount monthly">59</span>
+                            <span class="amount annual">47</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <i class="fas fa-check"></i> Acceso a gimnasio
+                                <span class="tooltip" data-tooltip="Acceso ilimitado 24/7">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                            </li>
+                            <li><i class="fas fa-check"></i> Clases grupales ilimitadas</li>
+                            <li><i class="fas fa-check"></i> App de seguimiento completa</li>
+                            <li><i class="fas fa-check"></i> 2 sesiones/mes con entrenador</li>
+                            <li><i class="fas fa-check"></i> Plan nutricional básico</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Acceso a todas las sedes</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#" class="btn-pricing">Elegir plan</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Elite</h3>
+                        <div class="price">
+                            <span class="currency">€</span>
+                            <span class="amount monthly">99</span>
+                            <span class="amount annual">79</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <i class="fas fa-check"></i> Acceso a gimnasio
+                                <span class="tooltip" data-tooltip="Acceso VIP con áreas exclusivas">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                            </li>
+                            <li><i class="fas fa-check"></i> Clases grupales ilimitadas</li>
+                            <li><i class="fas fa-check"></i> App de seguimiento premium</li>
+                            <li><i class="fas fa-check"></i> 4 sesiones/mes con entrenador</li>
+                            <li><i class="fas fa-check"></i> Nutrición personalizada completa</li>
+                            <li><i class="fas fa-check"></i> Acceso a todas las sedes</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#" class="btn-pricing">Elegir plan</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-guarantee">
+                <i class="fas fa-shield-alt"></i>
+                <p>Garantía de devolución de 30 días. Sin compromiso de permanencia.</p>
+            </div>
+        </div>
+    </div>
+ <footer class="footer">
+        <div class="container">
+            <div class="footer-map">
+                <h4>Encuéntranos aquí</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.198388057299!2d-62.401998223454896!3d-33.62609770653043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c8eb7673b6c67f%3A0x56345efaab51c861!2sGymTop%20Equipamientos!5e0!3m2!1ses!2sar!4v1744412924445!5m2!1ses!2sar"
+                    width="100%"
+                    height="450"
+                    style="border:0; border-radius: 8px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="media/logo.png" alt="BHOUT Club" class="footer-logo-img">
+                    <p>Experience the power of boxing for body and mind.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Training</h4>
+                        <ul>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Personal Training</a></li>
+                            <li><a href="#">Schedules</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Join Our Newsletter</h4>
+                    <p>Stay updated with the latest news and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-solid">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 BHOUT Club. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="pricing.js"></script>
+</body>
+</html>
